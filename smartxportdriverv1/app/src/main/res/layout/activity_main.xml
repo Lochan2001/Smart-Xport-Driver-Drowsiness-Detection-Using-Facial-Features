@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_top_vector"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center"
+        android:src="@drawable/drowsy"
+        android:transitionName="logo_image"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bungee"
+        android:text="Hello  there, Welcome  Back"
+        android:textColor="#7A6161"
+        android:textSize="34sp"
+        android:textStyle="normal"
+        android:transitionName="logo_text" />
+
+    <TextView
+        android:id="@+id/slogan_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Sign in to Continue"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_login_phone_24"
+            android:hint="Contact"
+
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/etcontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginTop="10dp"
+            app:startIconDrawable="@drawable/ic_login_password_24"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeColor="@color/black"
+
+            app:boxStrokeWidthFocused="2dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <EditText
+                android:id="@+id/etpwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btlogin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:elevation="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#000"
+            android:backgroundTint="#000"
+            android:text="Login"
+            android:textColor="#fff"
+            app:backgroundTint="#000000" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+<TextView
+    android:id="@+id/appnametext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:textSize="30sp"
+    android:textColor="#EF0E0E"
+    android:gravity="center"
+    android:fontFamily="@font/bungee"
+    />
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_bottom"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="207dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:src="@drawable/ic_bottom_vector" />-->
+
+</LinearLayout>
