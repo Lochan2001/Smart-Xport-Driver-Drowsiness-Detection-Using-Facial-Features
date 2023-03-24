@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:title="@string/str_nav_login"
+            android:icon="@drawable/menu_login_icon"
+            />
+
+        <item
+            android:id="@+id/nav_signup"
+            android:title="@string/str_nav_signup"
+            android:icon="@drawable/ic_signup_24"
+            />
+
+        <item
+            android:id="@+id/nav_langauge"
+            android:title="@string/str_nav_language"
+            android:icon="@drawable/ic_language_24"
+            />
+
+        <item
+            android:id="@+id/nav_faq"
+            android:title="@string/str_nav_faq"
+            android:icon="@drawable/ic_faq_24"
+            />
+
+        <item
+            android:id="@+id/nav_contactus"
+            android:title="@string/str_nav_contactus"
+            android:icon="@drawable/ic_menu_contactus"
+            />
+        <item
+            android:id="@+id/nav_share"
+            android:title="@string/str_nav_share"
+            android:icon="@drawable/menu_share_icon"
+            />
+        <item
+            android:id="@+id/nav_rate_us"
+            android:title="@string/str_nav_rateus"
+            android:icon="@drawable/menu_rate_us_icon"
+
+        />
+        ></group>
+</menu>
